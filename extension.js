@@ -17,12 +17,15 @@ function activate(context) {
   // Now provide the implementation of the command with  registerCommand
   // The commandId parameter must match the command field in package.json
   let disposable = vscode.commands.registerCommand(
-    'helloworld.helloWorld',
+    'show.currentTime',
     function () {
       // The code you place here will be executed every time your command is executed
+      const date = new Date();
 
       // Display a message box to the user
-      vscode.window.showInformationMessage('Hello World from HelloWorld!');
+      vscode.window.showInformationMessage(
+        `Current time is ${date.toLocaleTimeString()}`
+      );
     }
   );
 

@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "helloworld.helloWorld",
-        "title": "Greet Me"
+        "command": "show.currentTime",
+        "title": "Show time"
       }
     ]
   },
