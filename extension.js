@@ -23,7 +23,7 @@ function activate(context) {
       const date = new Date();
 
       // Display a message box to the user
-      vscode.window.showInformationMessage(
+      vscode.window.showWarningMessage(
         `Current time is ${date.toLocaleTimeString()}`
       );
     }
